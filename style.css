@@ -1,0 +1,53 @@
+header{
+  padding: 10px;
+  background-size: cover;
+  background-color: rgba(238, 161, 83, 0.781);
+  font-family: fantasy;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav{
+  background-color: rgba(0, 0, 0, 0.338);
+  
+  float: right;
+}
+.logo{
+  float: left;
+  size: 30px;
+}
+
+main{
+  border: 10px;
+  border-color: orangered;
+  background-color: coral;
+}
+
+#questions{
+  background-color: burlywood;
+  padding: 10px;
+}
+
+#q1{
+  background-color: crimson;
+  color: black;
+}
+
+#q2{
+  background-color: blue;
+  color:#f5f5f5;
+}
+
+#q3{
+  background-color: yellow;
+  color:rebeccapurple;
+}
+
+#q4{
+  background-color:antiquewhite;
+  color:teal;
+}

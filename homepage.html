@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Continent Spice Company. A spice website where you can buy gourmet and custom spice blends that are out of this world. So much so that they seem to be mythical from long lost continents and lands.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header> 
+        <div id="welcome"> </div>
+        <h1>Welcome <script>
+        let userName = prompt('What is your name?');
+            document.write (userName);
+            console.log(userName);
+            
+                </script>, To The Lost Continent Spice Company</h1>
+            
+        <nav>
+          <img src="images/Logo.png" alt="Lost Continent Spice Company Logo">
+            <ul> 
+                <!-- List types are common for nav builds    -->
+                <li><a href="#">HOME</a></li> 
+                <li><a href="#">SPICES</a></li>
+                <li><a href="#">ORDER ONLINE</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Class 1 lab</h1>
+        
+        <p>Our favorite spice blends!</p>
+        <ul>
+            <li>Pangea</li>
+            <li>El Dorado</li>
+            <li>Atlantis</li>
+            <li>Valhalla</li>
+        </ul>
+       <script>
+       let spice = spiceYouLike();
+       alert('I also like ' + spice + ' ' + userName + '!');
+       let visit = userVisits();
+       alert(visit + ' sounds like a great place to visit ' + userName + '.');
+       let newSpiceBlend = newSpice();
+       alert('Thanks for the suggestion ' + userName + '. We love thinking of new combinations and a ' + newSpiceBlend + ' blend, with hints of ' + spice + ' and ingredients from ' + visit + ' would be great!');
+
+       </script>
+       <div id="questions">
+       <div id="q1"><p>
+            What is your name?
+        </p></div>
+        <div id="q2"><p>
+            Which of the 4 flavor profiles do you like most? Sweet, Savory, Spicy, Fragrant
+        </p></div>
+        <div id="q3">
+            <p>
+                If you could visit any mythical location where would it be?
+            </p>
+        </div>
+        <div id="q4"><p>
+            What kind of new spice blend would you like to see?
+
+        </p></div>
+    </div>
+            </main>
+    
+    <footer>
+        <p>Farewell <script>goodbye(userName)</script>!</p>
+        <p>&copy; LCSC llc, 2022</p> 
+    </footer>
+</body>
+</html>
