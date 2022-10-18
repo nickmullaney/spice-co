@@ -12,16 +12,16 @@ function goodbye(userName){
 function spiceYouLike(){
   let spice = prompt('Which of the 4 flavor profiles do you like most? Sweet, Savory, Spicy, Fragrant');
   console.log(spice);
-  if (spice === 'sweet'){
+  if (spice === 'sweet' || spice === 'Sweet'){
     alert ('If you like ' + spice + ', you will love our Valhalla Blend');
   }
-  else if(spice === 'savory'){
+  else if(spice === 'savory' || spice === 'Savory' ){
     alert ('If you like ' + spice + ', you will love our Pangea Blend');
   }
-  else if(spice === 'spicy'){
+  else if(spice === 'spicy' || spice === 'Spicy'){
     alert ('If you like ' + spice + ', you will love our El Dorado Blend');
   }
-  else if(spice === 'fragrant'){
+  else if(spice === 'fragrant' || spice === 'Fragrant'){
     alert ('If you like Nick' + spice + ', you will love our Atlantis Blend');
   }
   else{
