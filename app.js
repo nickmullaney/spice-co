@@ -2,6 +2,7 @@ function yourName(){
   let userName = prompt('What is your name?');
   document.write (userName);
   console.log(userName);
+  return userName;
 }
 
 function goodbye(userName){
@@ -31,7 +32,7 @@ function spiceYouLike(){
 }
 
 function userVisits(){
-  let visit = prompt('If you could visit any mythical location where would it be?');
+  let visit = prompt('If you could visit any location, where would it be?');
   console.log(visit);
   return visit;
 }

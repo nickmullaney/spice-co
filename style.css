@@ -3,6 +3,8 @@ header{
   background-size: cover;
   background-color: rgba(238, 161, 83, 0.781);
   font-family: fantasy;
+  min-height: fit-content;
+
 }
 
 header::after{
@@ -14,8 +16,37 @@ header::after{
 nav{
   background-color: rgba(0, 0, 0, 0.338);
   color: black;
+}
+#logo{
+float: left;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+li a {
   float: right;
+  line-height: 100%;
+  width: auto;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  border-radius: 15px;
+  background-color: rgb(73, 80, 80);
+  width: 80px;
+  height: 30px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+  transition: all .4s ease 0s;
 }
 .logo{
   float: left;
