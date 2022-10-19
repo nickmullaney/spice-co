@@ -1,18 +1,28 @@
 function yourName(){
-  let userName = prompt('What is your name?');
-  document.write (userName);
-  console.log(userName);
-  return userName;
+  let valid = false;
+  while (valid === false){
+    let userName = prompt('What is your name?');
+    document.write (userName);
+    console.log('user name',userName);
+    if(userName === null){
+      valid = false;
+      yourName();
+    }
+    else{
+      valid = true;
+      return userName;
+    }
+  }
 }
 
 function goodbye(userName){
   document.write(userName);
-  console.log(userName);
+  console.log('user name',userName);
 }
 
 function spiceYouLike(){
   let spice = prompt('Which of the 4 flavor profiles do you like most? Sweet, Savory, Spicy, Fragrant');
-  console.log(spice);
+  console.log('spice',spice);
   if (spice === 'sweet' || spice === 'Sweet'){
     alert ('If you like ' + spice + ', you will love our Valhalla Blend');
   }
@@ -33,12 +43,15 @@ function spiceYouLike(){
 
 function userVisits(){
   let visit = prompt('If you could visit any location, where would it be?');
-  console.log(visit);
+  console.log('Where to visit: ', visit);
   return visit;
 }
 
 function newSpice(){
-  let newSpice = prompt('What kind of new spice blend would you like to see?');
-  console.log(newSpice);
+  let newSpice = prompt('What kind of new spice blend would you like to see? Something Zesty, Fruity, Fragrant, etc.');
+  console.log('new spice blend adjective: ',newSpice);
   return newSpice;
 }
+
+
+
